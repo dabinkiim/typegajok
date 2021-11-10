@@ -1,0 +1,28 @@
+@media screen and (max-width:900px) {
+
+        body {
+            font-size: 12px;
+            padding: .2rem;
+        }
+
+        #title {
+          width: 100% !important; position: relative;
+        }
+        ul#sheet {width: 100%;}
+        #sheet li {width: calc(50%);}
+
+        #sheet li:hover {
+        font-size: 1.05rem;
+      }
+
+        /* Detail Page  */
+        #text-box {
+            width: 100%; 
+          }
+
+        #image-box {
+            width: 100%;
+        }
+
+
+      } 
