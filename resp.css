@@ -1,7 +1,7 @@
 @media screen and (max-width:900px) {
 
         body {
-            font-size: 11px;
+            font-size: 10px;
         }
 
        
@@ -41,6 +41,10 @@
             width: 27.5vh;
             height: 27.5vh;
         }
+        #work_box .work a {
+            font-size: 4rem;
+            line-height: 4rem;
+        }
 
         /* Book */
         #book_box {
@@ -78,7 +82,7 @@
             left: 0;
             top: 45vh;
         }
-
+        li.log .log_info, li.log .content {font-size: .5rem;}
 
 
 
