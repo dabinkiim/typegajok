@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>글자가족 Typegajok</title>
+    <meta name="description" content="Typegajok Homepage">
+    <meta name="keywords" content="키워드">
+    <link rel="stylesheet" type="text/css" href="style.css">
+     <link rel="stylesheet" type="text/css" href="resp.css">
+      <script>
+          (function(d) {
+            var config = {
+              kitId: 'anu7eyk',
+              scriptTimeout: 3000,
+              async: true
+            },
+            h=d.documentElement,t=setTimeout(function(){h.className=h.className.replace(/\bwf-loading\b/g,"")+" wf-inactive";},config.scriptTimeout),tk=d.createElement("script"),f=false,s=d.getElementsByTagName("script")[0],a;h.className+=" wf-loading";tk.src='https://use.typekit.net/'+config.kitId+'.js';tk.async=true;tk.onload=tk.onreadystatechange=function(){a=this.readyState;if(f||a&&a!="complete"&&a!="loaded")return;f=true;clearTimeout(t);try{Typekit.load(config)}catch(e){}};s.parentNode.insertBefore(tk,s)
+          })(document);
+      </script>
+  </head>
+  <body>
+    <div id="cursor"></div> 
+    <div id="title">
+        <div id="view">
+        보기 : <span id="view1" >1</span> - <span id="view2">2</span>
+        </div>
+        <div id="search">
+          인덱스:<button id="btnN" class="key n">소식</button> <button id="btnR" class="key r">독서</button> <button id="btnP" class="key p">출판</button> <button id="btnI" class="key i">소개</button> 
+        </div>
+
+    </div>
+
+    <ul id="sheet">
+      <li id="intro">
+      글자가족은 ‘한 글자체가 가진 특성을 유지하며 여러 갈래로 파생된다’는 본래 의미처럼, 구성원들은 글자꼴에 뿌리를 두고 각자가 탐구하고자 하는 주제를 향해 가지를 뻗어 나가고 있다. 글자가족은 디자인에서 필연적으로 다룰 수밖에 없는 문자의 확장 가능성을 디자이너의 시선으로 탐구하고자 한다. 
+    </li>
+    </ul>
+
+    <div id="book_box" style="width:33.3vw">
+    <ul id="book_list"></ul>  
+  </div>
+
+    <script src="jquery.min.js"></script>
+    <script src="structure.js"></script>
+    <script src="book_struct.js"></script>
+    <script src="basic.js"></script>
+    
+
+  </body>
+</html>

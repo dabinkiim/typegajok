@@ -1,28 +1,129 @@
 @media screen and (max-width:900px) {
 
         body {
-            font-size: 12px;
-            padding: .2rem;
+            font-size: 11px;
         }
 
-        #title {
-          width: 100% !important; position: relative;
-        }
-        ul#sheet {width: 100%;}
-        #sheet li {width: calc(50%);}
+       
 
-        #sheet li:hover {
-        font-size: 1.05rem;
-      }
+        
+        /* Main */
+        .category {border: none;}
+
+        .category.work_title {border-bottom: 1px solid;}
+
+
+        .category.book_title {
+          left: calc(50vw + .1rem);
+          bottom: auto;
+          top: calc(45vh + 2.7rem);
+          transform: rotate(90deg) translate(-50%, 100%);
+          border-bottom: 1px solid;
+        }
+        .category.intro_title {
+          top: calc(30vh - 1.7rem);
+          border-top: 1px solid;
+        }
+        .category.log_title {
+          left: calc(50vw + .1rem);
+          top: auto;
+          bottom: -.5rem;
+          transform: rotate(90deg) translate(-50%, 100%);
+          border-top: 1px solid;
+        }
+
+        /* Work */
+        #work_box {
+            width: 100vw;
+            height: 30vh;
+        }
+        #work_box .work {
+            width: 27.5vh;
+            height: 27.5vh;
+        }
+
+        /* Book */
+        #book_box {
+            width: 50vw;
+            height: 55vh;
+            right: 0;
+            top: 45vh;
+        }
+        #book_list {margin-top: 0;}
+        #book_list li {
+            padding: .4rem;
+            max-width: 43vw;
+            box-shadow: -2px 5px 3px;
+        }
+        #book_list li .date {font-size: .33rem;}
+
+
+        /* Intro */
+        #intro_box {
+            width: 100vw;
+            height: 15vh;
+            top: 30vh;
+            padding: 0;
+            overflow-y: scroll;
+            border-right: none;
+            border-bottom: 1px solid;
+        }
+        #intro_box p {padding: .4rem;}
+
+
+        /* Log */
+        #log_box {
+            width: 50vw;
+            height: 55vh;
+            left: 0;
+            top: 45vh;
+        }
+
+
+
+
+
 
         /* Detail Page  */
         #text-box {
-            width: 100%; 
+            width: 100vw;
+            height: 45vh; 
+            border-bottom: 1px solid;
           }
+        #text-box li.i {
+            padding: .5rem;
+        }
+        #text-box li.i.title, #text-box li.i.caption {
+            width: 50vw;
+            float: left;
+            list-style: none;
+        }
+        #text-box li.i.caption {
+            border-left: 1px solid;
+        }
+
+        #text-box li.i.desc {
+         float: right;
+         border-bottom: none;
+        }
+
+
 
         #image-box {
-            width: 100%;
+            width: 100vw;
+            height: 55vh;
+            top: 45vh;
+            left: 0;
+            border: none;
         }
 
 
       } 
+
+      @media screen and (max-width:450px) {
+        #sheet li {
+            width: 50vw;
+            height: 50vw;
+        }
+        
+      }
