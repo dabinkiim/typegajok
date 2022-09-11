@@ -27,17 +27,6 @@ $('#view1').on('click', function(){
 
 
 
-//cursor
-
-let mouseCursor = document.querySelector("#cursor");
-  window.addEventListener("scroll", cursor);
-  window.addEventListener("mousemove", cursor);
-  //커스텀 커서의 left값과 top값을 커서의 XY좌표값과 일치시킴
-  function cursor(e) {
-    mouseCursor.style.left = e.pageX + "px";
-    mouseCursor.style.top = e.pageY + "px";
-}
-
 
 
 

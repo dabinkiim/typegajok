@@ -92,6 +92,7 @@
         #text-box {
             width: 100vw;
             height: 45vh; 
+            top: 0;
             border-bottom: 1px solid;
           }
         #text-box li.i {

@@ -23,6 +23,10 @@ fetch('https://opensheet.vercel.app/14ZaI6lKQaPLqW4XATjNGvsdGwULIMjXiVK2baQnUrX0
       book_colors = colors[Math.floor(Math.random() * colors.length)];
       $(this).css('background', book_colors);
     })
+    $('#work_box .work').each(function() {
+      book_colors = colors[Math.floor(Math.random() * colors.length)];
+      $(this).css('background', book_colors);
+    })
 
 
 

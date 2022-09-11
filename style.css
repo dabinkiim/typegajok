@@ -6,33 +6,19 @@
         box-sizing: border-box;
         font-size: 100%;
       }
-      html, body {cursor:none; word-break: keep-all;}
+      html, body {word-break: keep-all;}
 
       :root {
         --themecolor : brown;
       }
 
-      /*
-      #cursor {
-        width: 2rem; 
-        height: 2rem; 
-        position: absolute;
-        z-index: 10000;
-        background-image: url('images/logo_b.png');
-        background-size: 100%;
-        pointer-events: none;
-        transform: translate(-25%, -50%) rotate(-30deg);
-        transform-origin: 100% 100%;
-        }
-        */
 
         a {
-          cursor: none; 
           text-decoration: underline;
-          color: tomato;
+          color: mediumpurple;
           }
-        a:visited {color: hotpink;}
-        a:hover {color:tomato;}
+        a:visited {color: var(--themecolor);}
+        a:hover {color:yellow;}
         
 
       body {
@@ -50,30 +36,45 @@
 
 
   /* Page */ 
-    #back {padding: .7rem;}
+    #back {padding: .7rem; width: 100%;}
 
     #text-box {
       width: 33.33vw;
+      right: 0;
       height: 100vh;
       position: fixed;
       overflow-y: scroll;
+      background: linear-gradient(0deg, transparent 70%, lavender);
     }
+    ul.info {
+      list-style: none;
+    }
+
+    #text-box ul.info li{
+      float: left;
+    }
+
     #text-box li.i {
       padding: 1rem .7rem;
       border-top: 1px solid;
+      width: 50%;
+    }
+    #text-box li.i.caption {
+      border-left: 1px solid;
     }
 
     #text-box li.i.desc {
       font-size: .75rem;
       border-bottom: 1px solid;
+      width: 100%;
     }
 
     #image-box {
       position: fixed;
       width:66.66vw;
       height: 100vh;
-      left: 33.33vw;
-      border-left: 1px solid;
+      left: 0vw;
+      border-right: 1px solid;
       overflow-y: scroll;
     }
     #image-box img {
@@ -114,6 +115,7 @@
       border-left: 1px solid var(--themecolor);
       height: 100vh;
       overflow-y: scroll;
+      background: linear-gradient(0deg, transparent 70%, lavender);
     }
     #book_list {
       display: flex;
@@ -161,6 +163,7 @@
     overflow-y: hidden;
     display: flex;
     align-items: center;
+    background: linear-gradient(0deg, transparent 70%, lavender);
   }
 
   #work_box .work {
@@ -187,7 +190,7 @@
 
 
   #work_box .work a {
-    color: yellow;
+    color: white;
     font-size: 6rem;
     line-height: 5rem;
     text-decoration: none;
@@ -208,6 +211,7 @@
   height: 50vh;
   border-right: 1px solid var(--themecolor);
   padding: 1rem;
+  background: linear-gradient(0deg, transparent 70%, lavender);
 }
 #intro_box p {padding: 1.5rem .4rem;}
 
@@ -220,6 +224,7 @@
   height: 50vh;
   left: 33.33vw;
   overflow-y: scroll;
+  background: linear-gradient(0deg, transparent 70%, lavender);
 }
 #log_box li.log {
   border-bottom: 1px solid;
